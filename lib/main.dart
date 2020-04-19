@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('CrossAxisAlignment.baseline'),
+          title: Text('CrossAxisAlignment.start'),
         ),
         // Row and Column - MainAxisAlignment
         /*body: Column(
@@ -45,9 +45,12 @@ class MyApp extends StatelessWidget {
             ),
           ],
         ),*/
-        body: Row(
-          crossAxisAlignment: CrossAxisAlignment.baseline,  // Row and Column - CrossAxisAlignment Step 1
-          textBaseline: TextBaseline.alphabetic,            // Row and Column - CrossAxisAlignment Step 1
+        //
+        //
+        // Row and Column - CrossAxisAlignment
+        /*body: Row(
+          crossAxisAlignment: CrossAxisAlignment.baseline,  // Step 1
+          textBaseline: TextBaseline.alphabetic,            // Step 1
           children: <Widget>[
             Text(
               'Baseline',
@@ -56,6 +59,29 @@ class MyApp extends StatelessWidget {
             Text(
               'Baseline',
               style: Theme.of(context).textTheme.body1,
+            ),
+          ],
+        ),*/
+        body: Column(
+          children: <Widget>[
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start, // Step 2
+              children: <Widget>[
+                Text('Row'),
+                Icon(Icons.star, size: 50),
+                Icon(Icons.star, size: 200),
+                Icon(Icons.star, size: 50),
+              ],
+            ),
+            Text(''),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start, // Step 2
+              children: <Widget>[
+                Text('Column'),
+                Icon(Icons.star, size: 50),
+                Icon(Icons.star, size: 200),
+                Icon(Icons.star, size: 50),
+              ],
             ),
           ],
         ),
