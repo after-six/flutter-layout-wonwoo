@@ -9,13 +9,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('MainAxisAlignment.center'),
+          title: Text('MainAxisAlignment.start'),
         ),
         body: Column(
           children: <Widget>[
             Row(
-//              mainAxisAlignment: MainAxisAlignment.start, // Row and Column - MainAxisAlignment Step 1
-              mainAxisAlignment: MainAxisAlignment.center, // Row and Column - MainAxisAlignment Step 1
+              mainAxisAlignment: MainAxisAlignment.start, // Row and Column - MainAxisAlignment Step 1
               children: <Widget>[
                 Text('Row'),
                 Icon(Icons.star, size: 50),
@@ -25,8 +24,7 @@ class MyApp extends StatelessWidget {
             ),
             Text(''),
             Column(
-//              mainAxisAlignment: MainAxisAlignment.start, // Row and Column - MainAxisAlignment Step 1
-              mainAxisAlignment: MainAxisAlignment.center, // Row and Column - MainAxisAlignment Step 1
+              mainAxisAlignment: MainAxisAlignment.start, // Row and Column - MainAxisAlignment Step 1
               children: <Widget>[
                 Text('Column'),
                 Icon(Icons.star, size: 50),
