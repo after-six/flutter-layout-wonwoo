@@ -13,7 +13,25 @@ class MyApp extends StatelessWidget {
         ),
         body: Column(
           children: <Widget>[
-
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start, // Row and Column - MainAxisAlignment Step 1
+              children: <Widget>[
+                Text('Row'),
+                Icon(Icons.star, size: 50),
+                Icon(Icons.star, size: 50),
+                Icon(Icons.star, size: 50),
+              ],
+            ),
+            Text(''),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.start, // Row and Column - MainAxisAlignment Step 1
+              children: <Widget>[
+                Text('Column'),
+                Icon(Icons.star, size: 50),
+                Icon(Icons.star, size: 50),
+                Icon(Icons.star, size: 50),
+              ],
+            ),
           ],
         ),
       ),
