@@ -13,14 +13,19 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Container'),
         ),
-        body: Container(
-          height: double.infinity,
-          width: double.infinity,
-          transform: Matrix4.rotationZ(pi / 4),
-          decoration: BoxDecoration(color: Colors.yellowAccent),
-          child: Text(
-            "Hi",
-            textAlign: TextAlign.center,
+        body: Center(
+          child: Container(
+            height: 200,
+            width: 200,
+            decoration: BoxDecoration(
+              color: Colors.yellow,
+              image: DecorationImage(
+                fit: BoxFit.fitWidth,
+                image: NetworkImage(
+                  'https://flutter.io/images/catalog-widget-placeholder.png',
+                ),
+              ),
+            ),
           ),
         ),
       ),
