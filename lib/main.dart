@@ -7,15 +7,31 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('MainAxisAlignment.start'),
-        ),
-        body: Column(
-          children: <Widget>[
-
-          ],
-        ),
+      home: Stack(
+        fit: StackFit.expand,
+        children: <Widget>[
+          Scaffold(
+            appBar: AppBar(
+              title: Text('Stack'),
+            ),
+          ),
+          Banner(
+            message: "Top Start",
+            location: BannerLocation.topStart,
+          ),
+          Banner(
+            message: "Top End",
+            location: BannerLocation.topEnd,
+          ),
+          Banner(
+            message: "Bottom Start",
+            location: BannerLocation.bottomStart,
+          ),
+          Banner(
+            message: "Bottom End",
+            location: BannerLocation.bottomEnd,
+          ),
+        ],
       ),
     );
   }
