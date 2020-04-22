@@ -15,19 +15,25 @@ class MyApp extends StatelessWidget {
         ),
         body: Center(
           child: Container(
-            height: 200,
-            width: 200,
-            foregroundDecoration: BoxDecoration(
-              backgroundBlendMode: BlendMode.exclusion,
-              gradient: LinearGradient(
-                colors: const [
-                  Colors.black,
-                  Colors.blue,
-                ],
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: NetworkImage(
+                  'https://flutter.io/images/catalog-widget-placeholder.png',
+                ),
               ),
             ),
-            child: Image.network(
-              'https://flutter.io/images/catalog-widget-placeholder.png',
+            child: Container(
+              height: 200,
+              width: 200,
+              foregroundDecoration: BoxDecoration(
+                backgroundBlendMode: BlendMode.exclusion,
+                gradient: LinearGradient(
+                  colors: const [
+                    Colors.black,
+                    Colors.blue,
+                  ],
+                ),
+              ),
             ),
           ),
         ),
