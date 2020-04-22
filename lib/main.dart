@@ -12,6 +12,8 @@ class MyApp extends StatelessWidget {
           title: Text('MainAxisAlignment.start'),
         ),
         body: Container(
+          height: double.infinity,
+          width: double.infinity,
           color: Colors.yellowAccent,
           child: Text("Hi"),
         ),
