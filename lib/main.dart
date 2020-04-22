@@ -11,10 +11,12 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('MainAxisAlignment.start'),
         ),
-        body: Column(
-          children: <Widget>[
-
-          ],
+        body: ConstrainedBox(
+          constraints: BoxConstraints.expand(),
+          child: const Card(
+            child: const Text('Hello World!'),
+            color: Colors.yellow,
+          ),
         ),
       ),
     );
