@@ -18,9 +18,15 @@ class MyApp extends StatelessWidget {
             height: 200,
             width: 200,
             decoration: BoxDecoration(
-              gradient: RadialGradient(
-                colors: const [Colors.yellow, Colors.blue],
-                stops: const [0.4, 1.0],
+              gradient: SweepGradient(
+                colors: const [
+                  Colors.blue,
+                  Colors.green,
+                  Colors.yellow,
+                  Colors.red,
+                  Colors.blue,
+                ],
+                stops: const [0.0, 0.25, 0.5, 0.75, 1.0],
               ),
             ),
           ),
