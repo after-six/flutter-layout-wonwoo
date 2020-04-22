@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -9,16 +11,17 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('MainAxisAlignment.start'),
+          title: Text('Container'),
         ),
         body: Container(
           height: double.infinity,
           width: double.infinity,
+          transform: Matrix4.rotationZ(pi / 4),
           decoration: BoxDecoration(color: Colors.yellowAccent),
-          foregroundDecoration: BoxDecoration(
-            color: Colors.red.withOpacity(0.5),
+          child: Text(
+            "Hi",
+            textAlign: TextAlign.center,
           ),
-          child: Text("Hi"),
         ),
       ),
     );
