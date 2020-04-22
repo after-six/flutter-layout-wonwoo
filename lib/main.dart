@@ -18,10 +18,12 @@ class MyApp extends StatelessWidget {
             height: 200,
             width: 200,
             decoration: BoxDecoration(
-              color: Colors.yellow,
-              boxShadow: const [
-                BoxShadow(blurRadius: 10),
-              ],
+              gradient: LinearGradient(
+                colors: const [
+                  Colors.red,
+                  Colors.blue,
+                ],
+              ),
             ),
           ),
         ),
