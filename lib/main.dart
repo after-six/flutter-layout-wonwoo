@@ -15,6 +15,9 @@ class MyApp extends StatelessWidget {
           height: double.infinity,
           width: double.infinity,
           decoration: BoxDecoration(color: Colors.yellowAccent),
+          foregroundDecoration: BoxDecoration(
+            color: Colors.red.withOpacity(0.5),
+          ),
           child: Text("Hi"),
         ),
       ),
