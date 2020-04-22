@@ -19,12 +19,7 @@ class MyApp extends StatelessWidget {
             width: 200,
             decoration: BoxDecoration(
               color: Colors.yellow,
-              image: DecorationImage(
-                fit: BoxFit.fitWidth,
-                image: NetworkImage(
-                  'https://flutter.io/images/catalog-widget-placeholder.png',
-                ),
-              ),
+              border: Border.all(color: Colors.black, width: 3),
             ),
           ),
         ),
