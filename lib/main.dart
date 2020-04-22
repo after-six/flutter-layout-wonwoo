@@ -12,7 +12,12 @@ class MyApp extends StatelessWidget {
           title: Text('MainAxisAlignment.start'),
         ),
         body: ConstrainedBox(
-          constraints: BoxConstraints.expand(),
+          constraints: BoxConstraints(
+            minWidth: double.infinity,
+            maxWidth: double.infinity,
+            minHeight: 300,
+            maxHeight: 300,
+          ),
           child: const Card(
             child: const Text('Hello World!'),
             color: Colors.yellow,
