@@ -11,10 +11,9 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('MainAxisAlignment.start'),
         ),
-        body: Column(
-          children: <Widget>[
-
-          ],
+        body: Container(
+          color: Colors.yellowAccent,
+          child: Text("Hi"),
         ),
       ),
     );
