@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('CrossAxisAlignment.center'),
+          title: Text('CrossAxisAlignment.end'),
         ),
         // Row and Column - MainAxisAlignment
         /*body: Column(
@@ -66,7 +66,8 @@ class MyApp extends StatelessWidget {
           children: <Widget>[
             Row(
 //              crossAxisAlignment: CrossAxisAlignment.start, // Step 2
-              crossAxisAlignment: CrossAxisAlignment.center, // Step 3
+//              crossAxisAlignment: CrossAxisAlignment.center, // Step 3
+              crossAxisAlignment: CrossAxisAlignment.end, // Step 4
               children: <Widget>[
                 Text('Row'),
                 Icon(Icons.star, size: 50),
@@ -77,7 +78,8 @@ class MyApp extends StatelessWidget {
             Text(''),
             Column(
 //              crossAxisAlignment: CrossAxisAlignment.start, // Step 2
-              crossAxisAlignment: CrossAxisAlignment.center, // Step 3
+//              crossAxisAlignment: CrossAxisAlignment.center, // Step 3
+              crossAxisAlignment: CrossAxisAlignment.end, // Step 4
               children: <Widget>[
                 Text('Column'),
                 Icon(Icons.star, size: 50),
