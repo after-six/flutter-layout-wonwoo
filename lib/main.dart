@@ -19,7 +19,9 @@ class MyApp extends StatelessWidget {
             width: 200,
             decoration: BoxDecoration(
               color: Colors.yellow,
-              shape: BoxShape.circle,
+              boxShadow: const [
+                BoxShadow(blurRadius: 10),
+              ],
             ),
           ),
         ),
