@@ -17,17 +17,17 @@ class MyApp extends StatelessWidget {
           child: Container(
             height: 200,
             width: 200,
-            decoration: BoxDecoration(
-              gradient: SweepGradient(
+            foregroundDecoration: BoxDecoration(
+              backgroundBlendMode: BlendMode.exclusion,
+              gradient: LinearGradient(
                 colors: const [
-                  Colors.blue,
-                  Colors.green,
-                  Colors.yellow,
-                  Colors.red,
+                  Colors.black,
                   Colors.blue,
                 ],
-                stops: const [0.0, 0.25, 0.5, 0.75, 1.0],
               ),
+            ),
+            child: Image.network(
+              'https://flutter.io/images/catalog-widget-placeholder.png',
             ),
           ),
         ),
