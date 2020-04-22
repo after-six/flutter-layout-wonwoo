@@ -8,8 +8,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        backgroundColor: Colors.amber,
         appBar: AppBar(
-          title: Text('CrossAxisAlignment.end'),
+          title: Text('CrossAxisAlignment.stretch'),
         ),
         // Row and Column - MainAxisAlignment
         /*body: Column(
@@ -67,7 +68,8 @@ class MyApp extends StatelessWidget {
             Row(
 //              crossAxisAlignment: CrossAxisAlignment.start, // Step 2
 //              crossAxisAlignment: CrossAxisAlignment.center, // Step 3
-              crossAxisAlignment: CrossAxisAlignment.end, // Step 4
+//              crossAxisAlignment: CrossAxisAlignment.end, // Step 4
+              crossAxisAlignment: CrossAxisAlignment.stretch, // Step 5 infinite height error
               children: <Widget>[
                 Text('Row'),
                 Icon(Icons.star, size: 50),
@@ -79,7 +81,8 @@ class MyApp extends StatelessWidget {
             Column(
 //              crossAxisAlignment: CrossAxisAlignment.start, // Step 2
 //              crossAxisAlignment: CrossAxisAlignment.center, // Step 3
-              crossAxisAlignment: CrossAxisAlignment.end, // Step 4
+//              crossAxisAlignment: CrossAxisAlignment.end, // Step 4
+              crossAxisAlignment: CrossAxisAlignment.stretch, // Step 5
               children: <Widget>[
                 Text('Column'),
                 Icon(Icons.star, size: 50),
@@ -89,6 +92,8 @@ class MyApp extends StatelessWidget {
             ),
           ],
         ),
+        //
+        //
       ),
     );
   }
