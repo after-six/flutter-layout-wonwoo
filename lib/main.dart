@@ -11,10 +11,11 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Layout'),
         ),
-        body: Column(
-          children: <Widget>[
-
-          ],
+        body: SizedBox.expand(
+          child: Card(
+            child: Text('Hello World!'),
+            color: Colors.yellowAccent,
+          ),
         ),
       ),
     );
