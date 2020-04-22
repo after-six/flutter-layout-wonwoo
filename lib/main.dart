@@ -8,7 +8,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.amber,
         appBar: AppBar(
           title: Text('CrossAxisAlignment.stretch'),
         ),
@@ -63,7 +62,7 @@ class MyApp extends StatelessWidget {
             ),
           ],
         ),*/
-        body: Column(
+        /*body: Column(
           children: <Widget>[
             Row(
 //              crossAxisAlignment: CrossAxisAlignment.start, // Step 2
@@ -91,9 +90,43 @@ class MyApp extends StatelessWidget {
               ],
             ),
           ],
+        ),*/
+        //
+        //
+        // Row and Column - MainAxisSize
+        body: Column(
+          children: <Widget>[
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.amber,
+              ),
+              child: Row(
+                mainAxisSize: MainAxisSize.max, // step 1
+                children: <Widget>[
+                  Text('Row'),
+                  Icon(Icons.star, size: 50),
+                  Icon(Icons.star, size: 50),
+                  Icon(Icons.star, size: 50),
+                ],
+              ),
+            ),
+            Text(''),
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.amber,
+              ),
+              child: Column(
+                mainAxisSize: MainAxisSize.max, // step 1
+                children: <Widget>[
+                  Text('Column'),
+                  Icon(Icons.star, size: 50),
+                  Icon(Icons.star, size: 50),
+                  Icon(Icons.star, size: 50),
+                ],
+              ),
+            ),
+          ],
         ),
-        //
-        //
       ),
     );
   }
