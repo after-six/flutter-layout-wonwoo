@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('CrossAxisAlignment.stretch'),
+          title: Text('MainAxisSize.min'),
         ),
         // Row and Column - MainAxisAlignment
         /*body: Column(
@@ -101,7 +101,8 @@ class MyApp extends StatelessWidget {
                 color: Colors.amber,
               ),
               child: Row(
-                mainAxisSize: MainAxisSize.max, // step 1
+//                mainAxisSize: MainAxisSize.max, // step 1
+                mainAxisSize: MainAxisSize.min, // step 2
                 children: <Widget>[
                   Text('Row'),
                   Icon(Icons.star, size: 50),
@@ -116,7 +117,8 @@ class MyApp extends StatelessWidget {
                 color: Colors.amber,
               ),
               child: Column(
-                mainAxisSize: MainAxisSize.max, // step 1
+//                mainAxisSize: MainAxisSize.max, // step 1
+                mainAxisSize: MainAxisSize.min, // step 2
                 children: <Widget>[
                   Text('Column'),
                   Icon(Icons.star, size: 50),
